@@ -1,0 +1,4 @@
+protocol,n_train,n_test,train_positive_rate,test_positive_rate,train_groups,test_groups,groups_on_both_sides,group_leakage
+random,32000,8000,0.229281,0.22925,1961,1204,1094,True
+grouped,31627,8373,0.245486,0.16804,1656,415,0,False
+grouped_temporal,33581,6419,0.235133,0.198629,1656,415,0,False

@@ -1,0 +1,5 @@
+detector,scope,n_scored,n_anomalies,anomaly_rate,failure_rate_in_anomalies,failure_rate_in_normals,failure_enrichment
+isolation_forest,full,40000.0,2000,0.05,0.233,0.229079,1.0171
+lof,subsample<=60000,40000.0,2000,0.05,0.135,0.234237,0.5763
+ocsvm,subsample<=20000,20000.0,1009,0.05045,0.342914,0.225633,1.5198
+consensus(>=2),where>=2 scored,,554,0.01385,0.268953,0.228718,1.1759

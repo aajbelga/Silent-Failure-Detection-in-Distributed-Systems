@@ -1,0 +1,2 @@
+n_rows,n_columns,memory_mb,file_size_mb,physical_lines,full_row_duplicates,n_unique_usage_vectors,mean_replication,pct_collections_target_constant,failure_rate,n_leaking_columns,pct_time_valid,n_machines,n_collections,n_clusters
+40000,34,52.77,313.1,1324695,0,2569,15.57,83.0,0.229275,3,86.04,33686,2071,8
