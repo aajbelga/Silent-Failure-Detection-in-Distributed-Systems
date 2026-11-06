@@ -1,0 +1,33 @@
+# Silent Failure Detection in Distributed Systems -- Google Borg Cluster Traces
+#
+# Pinned to the versions this project was developed and verified against
+# (Python 3.12). Install with:
+#
+#     pip install -r requirements.txt
+#
+# --- core data handling ------------------------------------------------------
+pandas==2.3.3
+numpy==2.4.3
+
+# --- machine learning -------------------------------------------------------
+scikit-learn==1.8.0
+xgboost==3.2.0            # optional: models.py skips XGBoost if the import fails
+joblib==1.5.3
+
+# --- statistics -------------------------------------------------------------
+scipy==1.17.1             # Kendall tau, Mann-Whitney U, Spearman rho
+
+# --- visualisation ----------------------------------------------------------
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# --- explainability ---------------------------------------------------------
+shap==0.51.0              # optional: explainability.py reports "unavailable"
+                          # rather than fabricating values if this is missing
+
+# --- dashboard --------------------------------------------------------------
+streamlit==1.55.0
+plotly==6.8.0
+
+# --- tests ------------------------------------------------------------------
+pytest==8.4.2

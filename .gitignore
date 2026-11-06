@@ -1,0 +1,58 @@
+# --- data ---------------------------------------------------------------
+# The raw trace is ~313 MB and the processed copies are larger again; none of
+# them belong in version control. Keep the folders, not the contents.
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# --- generated outputs --------------------------------------------------
+# Everything here is reproducible with `python run_project.py`.
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/metrics/*
+!outputs/metrics/.gitkeep
+outputs/models/*
+!outputs/models/.gitkeep
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+outputs/reports/*
+!outputs/reports/.gitkeep
+outputs/tables/*
+!outputs/tables/.gitkeep
+
+# PROJECT_REPORT.md is auto-generated from the actual run; regenerate, don't edit.
+PROJECT_REPORT.md
+
+# --- logs ---------------------------------------------------------------
+*.log
+smoke*.log
+
+# --- python -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# --- editors / os -------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- streamlit ----------------------------------------------------------
+.streamlit/secrets.toml
+# Local configuration and shortcuts
+.claude/
+*.lnk
+
+# R generated data
+outputs/R_analysis/*.csv
+outputs/R_analysis/*.txtgit check-ignore -v .claude/settings.local.json
+outputs/R_analysis/*.csv
+outputs/R_analysis/*.txt
